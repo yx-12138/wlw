@@ -1,0 +1,31 @@
+.callus{
+  font-size:35rpx;
+  width: 200rpx;
+  color: blue;
+}
+.wechatnumber{
+font-size: 35rpx;
+color:red;
+margin-right: center;
+}
+.btn{
+  width: 100%;
+  margin-top: 30rpx;
+  color: blue;
+}
+.btn::after{
+  border: 0;
+}
+.btn_hover{
+  background-color:lightcyan;
+}
+
+
+.item-left{
+  width: 100%;
+  float: left;
+}
+.bg-qianlan{
+  width: 100%;
+  color: blue;
+}

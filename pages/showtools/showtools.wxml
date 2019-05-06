@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">我的设备</view>
+</cu-custom>
+
+<view  wx:for="{{device}}" wx:key="item" >
+
+  <view class="cu-card case " bindtap='showDetails' data-id='{{item.objectId}}' >
+    <view class="cu-item shadow">
+      <view class="image">
+        <image src="{{item.photo}}" mode="widthFix"></image>
+        <view class="cu-tag bg-blue">{{item.category}}</view>
+        <view class="cu-bar bg-shadeBottom">
+          <text class="text-cut">{{item.introduce}}</text>
+        </view>
+      </view>
+      <view class="cu-list menu-avatar">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url({{item.photo}});"></view>
+          <view class="content flex-sub">
+            <view class="text-grey">{{item.name}}</view>
+            <view class="text-gray text-sm flex justify-between">
+              状态：在线{{item.online}}
+              <view class="text-gray text-sm">
+                <text>设备温度:{{item.temp}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">注册</view>
+</cu-custom>
+<page>
+  <view class='table'>
+    <view class="line tr"></view>
+    <view class='tr'>
+      <view class="td">
+        <text>用户名：</text>
+      </view>
+      <view class='td'>
+        <input class="input" id='ipt_1' name="userName" placeholder="请输入用户名" bindinput='usr_ipt'/>  </view>
+    </view>
+    <view class='tr'>
+      <view class='td'>
+        <text class='text_size'> 密码：</text>
+      </view>
+      <view class='td'>
+        <input class="input" id='ipt_1' password placeholder="请输入密码"  bindinput='psw_ipt'/>   </view>
+    </view>
+
+    <view class='tr'>
+      <view class='td'>
+        <text class='text_size'> 确认密码：</text>
+      </view>
+      <view class='td'>
+        <input class="input" id='ipt_1' password placeholder="请输入密码" bindinput='psw2_ipt'/> </view>
+    </view>
+
+    <view class='btn_re'>
+      <button type="primary" size="mini" bindtap='register'>注册</button>
+    </view>
+  </view>
+</page>

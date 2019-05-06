@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">修改密码</view>
+</cu-custom>
+<form>
+  <view class="cu-form-group margin-top">
+    <view class="title">旧密码:</view>
+    <input password="true" bindinput="psWd_old"> </input>
+  </view>
+  <view class="cu-form-group margin-top">
+    <view class="title">新密码:</view>
+    <input password="true" bindinput="psWd_new"> </input>
+  </view>
+   <view class="cu-form-group margin-top">
+    <view class="title">确认密码:</view>
+    <input password="true"bindinput="psWd_check"> </input>
+  </view>
+  
+  
+  <view class="cu-form-group">
+    <view class="title">验证码</view>
+    <input placeholder="请输入验证码"></input>
+    <button class="cu-btn bg-green shadow">获取验证码</button>
+  </view>
+  
+ 
+  <button bindtap='changePsw' >修改</button>
+</form>

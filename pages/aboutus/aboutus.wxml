@@ -1,0 +1,43 @@
+
+<!--成员介绍-->
+
+<view class="cu-timeline">
+
+  <view class="cu-time" >成员介绍：</view>
+     
+  <view class="cu-item">
+ 
+  <!--队长介绍-->
+  
+    <view class="content">
+      <view class="cu-capsule radius">
+   
+        <view class="cu-tag bg-blue">江会文：</view>
+       
+      </view>
+      <view class="margin-top">就读于江西师范大学软件学院，主要负责小程序的UI及部分后端功能实现</view>
+    </view>
+  </view>
+    </view>
+    <!--对成员1的介绍-->
+    <view class="cu-timeline">
+ 
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-blue">付勇星：</view>
+    
+      </view>
+      <view class="margin-top">就读于江西师范大学软件学院，负责小程序后端功能实现  </view> 
+  </view>
+  </view>
+  </view> 
+   
+  <!--联系我们，加队长微信-->
+  <view>
+  
+  <text class="callus">初次开发微信小程序，欢迎大家及时反馈对我们的建议，商务合作可添加下方微信\n</text>
+  <text class="wechatnumber">            微信号：Silence651971130</text>
+ <button class="bg-qianlan"   bindtap="copyBtn" formType="submit" type='primary'>复制微信号</button>
+
+  </view>

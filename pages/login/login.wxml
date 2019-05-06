@@ -1,0 +1,35 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">登录</view>
+</cu-custom>
+<page class='pge'>
+<view class='table'>
+  <view class="line tr">
+  </view>
+  <view class="tr">
+    <view class="td">
+      用户名：
+    </view>
+    <view class="td">
+      <input class="input" id='ipt_1' name="userName" placeholder="请输入用户名" bindinput='usr_ipt' />
+    </view>
+  </view>
+  <view class="tr">
+    <view class="td">
+      密码：
+    </view>
+    <view class="td" view id='ipt_1'>
+      <input class="input" id='ipt_1' password placeholder="请输入密码" bindinput='psw_ipt' />  </view>
+  </view>
+  <view class="tr">
+    <view class="td">
+      <button type="primary" id='btn_re' size="mini" bindtap='login'>登录
+      </button>
+    </view>
+    <view class="td">
+      <button type="primary" id='btn_re' size="mini" bindtap='register'>注册
+      </button>
+    </view>
+  </view>
+
+  </view>
+</page>

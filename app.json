@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/mine/mine",
+    "pages/showtools/showtools",
+    "pages/showDetails/showDetails",
+    "pages/addTools/addTools",
+    "pages/changePsw/changePsw",
+    "pages/changeInformation/changeInformation",
+    "pages/bindingEmail/bindingEmail",
+    "pages/bindingPhone/bindingPhone",
+    "pages/showDetails/showChart/showChart",
+    "pages/aboutus/aboutus",
+    "pages/usehelp/usehelp"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/showtools/showtools",
+        "text": "我的设备",
+        "iconPath": "images/icon/add.png",
+        "selectedIconPath": "images/icon/adding.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/indexing.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icon/set.png",
+        "selectedIconPath": "images/icon/setting.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

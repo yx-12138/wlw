@@ -1,0 +1,67 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">修改个人资料</view>
+</cu-custom>
+<form>
+  <view class="cu-form-group margin-top">
+    <view class="title">用户名：</view>
+    <input placeholder="输入新的用户名" bindinput="get_username"> </input>
+  </view>
+  <view class="cu-form-group margin-top">
+    <view class="title">电话号码：</view>
+    <input placeholder="telephoeNumber"bindinput="get_tel"> </input>
+  </view>
+  <view class="cu-form-group margin-top">
+    <view class="title"> 电子邮箱：</view>
+    <input placeholder="emailAddress"bindinput="get_email"> </input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">联系地址</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group margin-top">
+    <view class="title"> 详细地址（精确到门牌号）：</view>
+    <input placeholder="xx县xx街道xx号"> </input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">生日</view>
+    <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="cu-bar bg-white margin-top">
+    <view class="action">
+      选择头像
+    </view>
+    <view class="action">
+      {{imgList.length}}/1
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="grid col-4 grid-square flex-sub">
+      <view class="padding-xs bg-img" style="background-image:url({{imgList[index]}})" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+        <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+          <text class="icon-close"></text>
+        </view>
+      </view>
+      <view class="padding-xs solids" bindtap="ChooseImage" wx:if="{{imgList.length<1}}">
+        <text class="icon-cameraadd"></text>
+      </view>
+    </view>
+  </view>
+  <view class="action">
+    个性签名：
+  </view>
+  <view class="cu-form-group margin-top">
+
+    <textarea  maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaAValue?'value':''}}" bindinput="textareaAInput"></textarea>
+  </view>
+  <button bindtap='change_info'>确认修改</button>
+</form>

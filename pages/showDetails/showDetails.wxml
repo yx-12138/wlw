@@ -1,0 +1,31 @@
+<cu-custom bgColor="bg-gradual-blue"isBack="{{true}}">
+  <view slot="content">设备详情</view>
+</cu-custom>
+<view class='center'>
+  <view class="cu-capsule">
+    <view class="cu-tag bg-red">
+      <text class="icon-likefill">名称</text>
+    </view>
+    <view class="cu-tag line-red">
+      {{device.name}}
+    </view>
+  </view>
+  <view class="cu-capsule round">
+    <view class="cu-tag bg-blue ">
+      <text class="icon-likefill">温度</text>
+    </view>
+    <view class="cu-tag line-blue">
+      {{device.temp}}
+    </view>
+  </view>
+</view>
+<view class="cu-timeline"wx:for="{{device_event}}" wx:key="index" wx:for-item="item" wx:if="{{index<10}}">
+  <view class="cu-item cur {{item.event_type}}">
+    <view class="content bg-{{item.event_color}} shadow-blur">
+      <text>{{item.event_data}} </text> {{item.event_introduce}}
+    </view>
+  </view>
+
+</view>
+
+<button bindtap='show_chart'> 图表</button>
